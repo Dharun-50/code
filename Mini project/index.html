@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Priority Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Priority Manager</h1>
+        <div class="filter">
+            <button id="allBtn">All Tasks</button>
+            <button id="lowBtn">Low Priority</button>
+            <button id="mediumBtn">Medium Priority</button>
+            <button id="highBtn">High Priority</button>
+        </div>
+        <div class="form">
+            <input type="text" id="taskTitle" placeholder="Task Title" required>
+            <textarea id="taskDescription" placeholder="Task Description" required></textarea>
+            <select id="prioritySelect" required>
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <button id="addBtn">Add Task</button>
+        </div>
+        <ul id="taskList">
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
